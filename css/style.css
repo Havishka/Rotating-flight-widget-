@@ -1,0 +1,86 @@
+ /** Use google font **/
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+ *{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: antiquewhite;
+    font-size: 35px;
+ }
+
+ /** Everything inside the body **/
+
+ body{
+    display: flex; /*** Center everything **/
+    justify-content: center; /** Can't use this line without display flex **/
+    height: 100vh;
+    align-items: center; /*** Cant use this line without the height **/
+    background-color: rgb(251, 199, 127);
+ }
+
+ /** 
+justify-content: longer word: horizontal alignment
+align-items: shorter word: vertical alignment
+**/
+
+header {
+    padding: 10px;
+
+}
+
+.depatures {
+    background-color: rgb(6, 6, 6);
+    border-radius: 10px;
+    padding: 100px;
+}
+
+/**** color the table inside the depature div **/
+.depatures table {
+    background-color: rgb(46,46,46);
+    text-align: left;
+    /*** Refresh the page and check how it looks from here ***/
+}
+/** getting every td element inside the table **/
+.depatures table div{
+    border: solid 4px rgb(26,26,26);
+    background-color: black; /*** Refresh the page and check how it looks from here ***/
+    float: left;
+    height: 40px;
+}
+
+#time {
+    width: 160px;
+}
+
+#destination {
+    width: 200px;
+}
+
+#gate {
+    width: 135px;
+}
+
+#remarks {
+    width: 260px;
+}
+
+#flight {
+    width: 230px;
+}
+
+/*** Animate the board **/
+.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes  flipping {
+    0% {
+        transform: rotateX(0deg); /*** Start with 0 degrees **/
+    }
+    50% {
+        transform: rotateX(90deg); /*** Start with 0 degrees **/
+    }
+    100% {
+        transform: rotateX(0deg); /*** Start with 0 degrees **/
+    }
+}
+
